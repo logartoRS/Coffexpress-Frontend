@@ -1,0 +1,15 @@
+<mat-toolbar>
+    <div class="header-container" (click)="navigateToHome()">
+        <img src="../../../assets/images/coffexpress-logo.svg" alt="Coffexpress Logo" class="icon-header">
+        <span class="header-title">{{ title }}</span>
+    </div>
+    
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" class="custom-search" [(ngModel)]="searchQuery" (input)="onSearchChange(searchQuery)" placeholder="Buscar productos...">
+            <mat-icon class="search-icon">search</mat-icon>
+        </div>
+    </div>
+
+    <div class="spacer-container"></div>
+</mat-toolbar>

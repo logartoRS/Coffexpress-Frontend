@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="carouser-img-container">
+    <h1>Novedades</h1>
+    <app-carousel [allItems]="allItems"></app-carousel>
+</div>
+
+<div class="home-post-container">
+    <app-post *ngFor="let post of postItems" [postItem]="post"></app-post>
+</div>

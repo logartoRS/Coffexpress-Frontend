@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Flexo-Thin';
+  src: url('/assets/fonts/Flexo-Thin.ttf') format('truetype');
+  font-weight: thin;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Flexo-Regular';
+  src: url('/assets/fonts/Flexo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Flexo-Medium';
+  src: url('/assets/fonts/Flexo-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Flexo-Bold';
+  src: url('/assets/fonts/Flexo-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html, body { 
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Flexo-Thin'; 
+}

@@ -1,0 +1,34 @@
+<div class="post-container">
+    <div class="post-header">
+        <div class="store-container">
+            <img [src]="postItem.StoreImage"
+                 [alt]="postItem.Store"
+                 class="store-image"/>
+            <p class="store-label">{{ postItem.Store }}</p>
+            <p class="store-date">■</p>
+            <p class="store-date">{{ minutesElapsed }}</p>
+        </div>
+
+        <button mat-flat-button class="post-button">Seguir</button>
+    </div>
+
+    <img [src]="postItem.ProductImage"
+         [alt]="postItem.ProductName"
+         class="post-image"/>
+
+    <div class="favorite-container">
+        <div class="like-container">
+            <mat-icon class="post-icon" (click)="toggleLike()">
+                      {{ postItem.IsLiked ? 'favorite' : 'favorite_border' }}
+            </mat-icon>
+            <p class="post-label">{{ postItem.ProductLikes }} likes</p>
+
+            <mat-icon class="post-icon-green">payments</mat-icon>
+            <p class="post-label">{{ postItem.ProductPrice }} {{ postItem.ProductDivisa }}</p>
+        </div>
+
+        <button mat-flat-button class="post-button">Comprar</button>
+    </div>
+
+    <p class="post-description"><span class="post-name-product">{{ postItem.ProductName }}</span> {{ postItem.ProductDescription }}</p>
+</div>

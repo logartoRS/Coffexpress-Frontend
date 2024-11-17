@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Flexo-Bold';
+    font-weight: bold;
+}
+
+.carouser-img-container {
+    display: table;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.home-post-container {
+    display: table;
+    margin: 10px auto;
+}

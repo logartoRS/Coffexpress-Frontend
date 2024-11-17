@@ -1,0 +1,19 @@
+<div class="carousel">
+    <mat-icon class="carousel-button"
+              [ngStyle]="{ 'visibility': currentIndex === 8 ? 'hidden' : 'visible' }"
+              (click)="moveLeft()">chevron_left</mat-icon>
+
+    <div class="carousel-container">
+        <div *ngFor="let item of items"
+             class="state-container">
+            <img [src]="item.image"
+                 [alt]="item.alt"
+                 class="carousel-image"/>
+            <p class="carousel-label">{{ item.user }}</p>
+        </div>
+    </div>
+    
+    <mat-icon class="carousel-button"
+              [ngStyle]="{ 'visibility': currentIndex === maxIndex ? 'hidden' : 'visible' }"
+              (click)="moveRight()">chevron_right</mat-icon>
+</div>
